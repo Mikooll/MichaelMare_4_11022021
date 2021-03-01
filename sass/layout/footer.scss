@@ -3,6 +3,10 @@
     height: 4rem;
     padding-top: 2rem;
     background-color: $color-primary;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 
     &__itm {
         margin: 2rem 2rem 0 0;
