@@ -8,16 +8,17 @@ fetch("http://localhost:3000/api/cameras/" + idProducts[1])
         var container = document.querySelector(".container")
 
         var html = "<div class='product__card'>\
-        <p> Nom : " + datas.name + " </p>\
-        <p>Prix : " + datas.price + "</p>\
-        <img class='product__img' src=" + datas.imageUrl + "></img>\
-        <p>" + datas.description + "</p>\
-        <label for='select_lense'>Choisissez votre lentille</label>\
+        <div class='product__view'><h2>" + datas.name + " </h2>\
+        <img class='product__img' src=" + datas.imageUrl + "></img></div>\
+        <div class='product__desc'>\
+        <p>Prix : " + datas.price/100 + "€</p>\
+        <p> Description : <br>" + datas.description + "</p>\
+        <label for='select_lense'>Choisissez votre lentille : </label>\
         <select class='lenses' name='lenses' id='select__color'>\
-        </select>\
-        </div><br>\
+        </select><br>\
         <button class='addToCart'>\
-        <b>Ajouter au panier</b><i class='fas fa-cart-arrow-down'></i></button>";
+        <b>Ajouter au panier</b><i class='fas fa-cart-arrow-down'></i></button>\
+        </div></div><br>";
 
         container.innerHTML = html;
 

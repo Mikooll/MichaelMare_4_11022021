@@ -1,0 +1,19 @@
+{
+  "name": "michaelmare_5_11022021",
+  "version": "1.0.0",
+  "description": "Construisez un site e-commerce",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mikooll/MichaelMare_5_11022021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mikooll/MichaelMare_5_11022021/issues"
+  },
+  "homepage": "https://github.com/Mikooll/MichaelMare_5_11022021#readme"
+}

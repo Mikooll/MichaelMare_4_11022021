@@ -1,0 +1,27 @@
+.product {
+    &__card {
+        width: 100%;
+        display: flex;
+    }
+
+    &__img {
+        width: 50%;
+        border-radius: 1rem;
+    }
+
+    &__view {
+        width: 70%;
+    }
+
+    &__desc {
+        width: 30%;
+        margin: auto;
+        text-align: start;
+    }
+}
+
+.container {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}

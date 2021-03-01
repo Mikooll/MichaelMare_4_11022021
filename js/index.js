@@ -6,10 +6,10 @@ fetch("http://localhost:3000/api/cameras")
 
         for (var i = 0; i < datas.length; i++) {
             console.log(datas[i])
-            html += "<div class='products__card'><a href='./produit.html?" + datas[i]._id + "'><p> Nom : " + datas[i].name + " </p>\
-        <p>Prix : " + datas[i].price + "</p>\
-        <img class='products__img' src=" + datas[i].imageUrl + "></img>\
-        <p>" + datas[i].description + "</p>";
+            html += "<div class='products__card'><a href='./produit.html?" + datas[i]._id + "'><h2 class='products__title'>" + datas[i].name + " </h2>\
+            <p class='products__price'>" + datas[i].price/100 + "€</p>\
+            <img class='products__img' src=" + datas[i].imageUrl + "></img>\
+            <p class='products__description'>" + datas[i].description + "</p>";
 
             html += "</a></div><br>";
         }

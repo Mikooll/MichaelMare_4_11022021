@@ -1,0 +1,31 @@
+.products {
+    display: flex;
+    margin: 1rem;
+
+    &__card {
+        flex-wrap: wrap;
+        margin: 1rem;
+        border: 2px solid gray;
+        border-radius: 2rem;
+        padding: 1rem;
+
+        &:hover {
+            background-color: $color-primary;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 1rem;
+    }
+
+    &__title,
+    &__price {
+        text-align: center;
+    }
+}

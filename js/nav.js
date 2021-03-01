@@ -5,7 +5,7 @@ fetch("http://localhost:3000/api/cameras")
         var navContent = "";
 
         for (var i = 0; i < datas.length; i++) {
-            navContent += "<a href='produit.html?" + datas[i]._id + "'>" + datas[i].name + "</a>"
+            navContent += "<a class='nav__drpdown' href='produit.html?" + datas[i]._id + "'>" + datas[i].name + "</a>"
         }
         nav.innerHTML = navContent;
     })

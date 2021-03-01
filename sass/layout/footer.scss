@@ -1,0 +1,12 @@
+.footer {
+    text-align: center;
+    height: 4rem;
+    padding-top: 2rem;
+    background-color: $color-primary;
+
+    &__itm {
+        margin: 2rem 2rem 0 0;
+        color: black;
+        text-decoration: none;
+    }
+}
