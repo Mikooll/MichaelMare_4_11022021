@@ -72,15 +72,20 @@
   text-align: left;
 }
 
+@media (max-width: 1024px) {
+  .logo__link {
+    width: 25%;
+  }
+}
 .footer {
   text-align: center;
   height: 4rem;
   padding-top: 2rem;
   background-color: #f3e9f1;
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+  margin-top: 3rem;
 }
 .footer__itm {
   margin: 2rem 2rem 0 0;
@@ -88,6 +93,11 @@
   text-decoration: none;
 }
 
+@media (min-width: 1440px) {
+  .footer {
+    position: absolute;
+  }
+}
 .products {
   display: flex;
   margin: 1rem;
@@ -114,27 +124,264 @@
   text-align: center;
 }
 
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .products {
+    width: 50%;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+  }
+}
+@media (max-width: 1024px) {
+  .products {
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 1rem auto;
+  }
+}
+@media (max-width: 767px) {
+  .products {
+    width: 100%;
+  }
+}
+.container {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
 .product__card {
   width: 100%;
   display: flex;
 }
 .product__img {
-  width: 50%;
+  width: 100%;
   border-radius: 1rem;
 }
 .product__view {
-  width: 70%;
+  width: 50%;
 }
 .product__desc {
   width: 30%;
   margin: auto;
   text-align: start;
+  font-size: larger;
+}
+.product__desc__text {
+  line-height: 2rem;
+}
+.product__desc__price {
+  font-weight: 700;
+  font-size: larger;
 }
 
-.container {
-  text-align: center;
+.lenses {
   padding: 1rem;
-  margin-bottom: 3rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.addToCart {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: white;
+  font-weight: 700;
+  border-radius: 1rem;
+  font-size: larger;
+  cursor: pointer;
+}
+.addToCart:hover {
+  background-color: #f3e9f1;
+}
+
+.confirm__text {
+  color: red;
+  font-weight: 700;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .product__card {
+    display: block;
+  }
+  .product__view {
+    width: 100%;
+  }
+  .product__desc {
+    width: 100%;
+  }
+
+  .addToCart {
+    margin: 2rem 0;
+  }
+}
+.cart {
+  list-style: none;
+  border: 2px solid #f3e9f1;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+.cart__name {
+  font-weight: 700;
+  font-size: larger;
+}
+.cart__quantity {
+  font-weight: 600;
+}
+.cart__price {
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.items-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.addItem,
+.removeItem {
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: antiquewhite;
+}
+
+.addItem {
+  padding: 0.5rem 0.5rem 0.5rem 0.7rem;
+  margin: 1rem 1rem 1rem 6rem;
+}
+
+.removeItem {
+  padding: 0.5rem 0.7rem 0.5rem 0.5rem;
+  margin: 1rem 0 1rem 1rem;
+}
+
+.total-price {
+  text-align: center;
+  margin-top: 2rem;
+  border: 2px solid red;
+  padding: 2rem;
+  color: rebeccapurple;
+  font-weight: 700;
+  font-size: larger;
+}
+
+.form__contact {
+  text-align: center;
+}
+.form__contact input {
+  margin: 1rem 0;
+  padding: 0.4rem;
+  border-radius: 1rem;
+  width: 70%;
+}
+
+.clearCart {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+.clearCart a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.clearCart a:hover {
+  background-color: red;
+  color: white;
+  padding: 1rem;
+}
+
+.validate {
+  background-color: white;
+  margin: 3rem 0;
+  font-weight: 700;
+  border-radius: 1rem;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+.validate:hover {
+  background-color: greenyellow;
+}
+
+.footer {
+  position: absolute;
+}
+
+@media (max-width: 1023px) {
+  .items-container {
+    display: block;
+  }
+
+  .items {
+    padding: 0;
+  }
+
+  .addItem {
+    margin: 0 1rem 0 0;
+  }
+
+  .cart {
+    width: 50%;
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  .total-price {
+    width: 30%;
+    margin: 2rem auto;
+  }
+
+  .title__form {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .cart {
+    width: 70%;
+  }
+}
+.confirmation__container {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  margin-top: 15%;
+}
+
+.firstName,
+.idProduct,
+.name,
+.adress,
+.city,
+.email {
+  font-weight: 600;
+}
+
+.back {
+  margin: 2rem 0;
+}
+.back a {
+  text-decoration: none;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  color: black;
+  font-weight: 700;
+}
+.back a:hover {
+  background-color: #f3e9f1;
+}
+
+@media (max-width: 767px) {
+  .confirmation__container {
+    width: 100%;
+    margin-top: 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

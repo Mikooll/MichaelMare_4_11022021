@@ -1,0 +1,39 @@
+.confirmation__container {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 15%;
+}
+
+.firstName,
+.idProduct,
+.name,
+.adress,
+.city,
+.email {
+    font-weight: 600;
+}
+
+.back {
+    margin: 2rem 0;
+
+    a {
+        text-decoration: none;
+        padding: 1rem;
+        border: 1px solid black;
+        border-radius: 1rem;
+        color: black;
+        font-weight: 700;
+
+        &:hover {
+            background-color: $color-primary;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .confirmation__container {
+        width: 100%;
+        margin-top: 50%;
+    }
+}

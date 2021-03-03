@@ -3,14 +3,21 @@
     height: 4rem;
     padding-top: 2rem;
     background-color: $color-primary;
-    position: fixed;
     left: 0;
     bottom: 0;
+
     width: 100%;
+    margin-top: 3rem;
 
     &__itm {
         margin: 2rem 2rem 0 0;
         color: black;
         text-decoration: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .footer {
+        position: absolute;
     }
 }

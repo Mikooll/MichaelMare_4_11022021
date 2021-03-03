@@ -29,3 +29,25 @@
         text-align: center;
     }
 }
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+    .products {
+        width: 50%;
+        flex-wrap: wrap;
+        margin: 1rem auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .products {
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 1rem auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .products {
+        width: 100%;
+    }
+}

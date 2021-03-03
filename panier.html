@@ -16,7 +16,8 @@
     <header>
         <nav>
             <div class="navbar">
-                <a href="index.html" class="logo__link"><img class="logo__img" src="img/logo.png" alt="logo Orinoco, spécialistes des appareils photos vintage"></a>
+                <a href="index.html" class="logo__link"><img class="logo__img" src="img/logo.png"
+                        alt="logo Orinoco, spécialistes des appareils photos vintage"></a>
                 <div class="dropdown">
                     <button class="dropbtn nav__icon">Produits
                         <i class="fa fa-caret-down"></i>
@@ -31,39 +32,36 @@
     <main>
         <div class="items-container">
             <ul class="items">
-
             </ul>
+            <div>
+                <h2 class="title__form">Remplissez ce formulaire afin de valider votre commande</h2>
+                <form class="form__contact" action="post" type="submit">
+                    <div class="form__content">
+                        <label for="firstname">Prénom*</label><br>
+                        <input type="text" name="firstname" class="firstname" id="firstname" required />
+                    </div>
+                    <div class="form__content">
+                        <label for="name">Nom*</label><br>
+                        <input type="text" name="name" class="lastname" id="lastname" required />
+                    </div>
+                    <div class="form__content">
+                        <label for="address">Adresse*</label><br>
+                        <input type="text" name="address" class="adress" id="adress" required />
+                    </div>
+                    <div class="form__content">
+                        <label for="city">Ville*</label><br>
+                        <input type="text" name="city" class="city" id="city" required />
+                    </div>
+                    <div class="form__content">
+                        <label for="email">Email*</label><br>
+                        <input type="email" name="email" class="email" id="email" required />
+                    </div>
+                    <button class="validate" id="submit">
+                        <p>Valider la commande</p>
+                    </button>
+                </form>
+            </div>
         </div>
-        <div class="clearCart" onclick="clearCart()">
-            <a href="./panier.html">Vider le panier</a>
-        </div>
-        <h2>Remplissez ce formulaire afin de valider votre commande</h2>
-        <form class="form__contact" action="post" type="submit">
-            <div class="form__content">
-                <label for="firstname">Prénom*</label><br>
-                <input type="text" name="firstname" class="firstname" id="firstname" required />
-            </div>
-            <div class="form__content">
-                <label for="name">Nom*</label><br>
-                <input type="text" name="name" class="lastname" id="lastname" required />
-            </div>
-            <div class="form__content">
-                <label for="address">Adresse*</label><br>
-                <input type="text" name="address" class="adress" id="adress" required />
-            </div>
-            <div class="form__content">
-                <label for="city">Ville*</label><br>
-                <input type="text" name="city" class="city" id="city" required />
-            </div>
-            <div class="form__content">
-                <label for="email">Email*</label><br>
-                <input type="email" name="email" class="email" id="email" required />
-            </div>
-            <button class="validate" id="submit"
-                style="border:0; background-color:#f3e9f1; border-radius:15px;  box-shadow: 0px 0px 8px 0px white; margin: 30px 0 0 45%;">
-                <p>Valider la commande</p>
-            </button>
-        </form>
     </main>
     <footer class="footer">
         <a class="footer__itm" href="index.html"><b>Mentions légales</b></a>

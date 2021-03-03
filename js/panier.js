@@ -19,11 +19,13 @@ function setItems() {
             totalPrice += price;
             console.log(totalPrice);
             console.log(price);
-            html += "<li class='cart'>" + cartItems[itm].name + " avec lentille : " + cartItems[itm].lenseChoice + " </p><p> Quantité : <span class='addItem item" + itm + "'> + </span>" + cartItems[itm].quantity + "<span class='removeItem item" + itm + "'> - </span></p><p>Prix = " + price + "€</li><hr>"
-            // cartItems[itm].quantity++;
+            html += "<li class='cart'><p class='cart__name'>" + cartItems[itm].name + " avec lentille : " + cartItems[itm].lenseChoice + " </p><p class='cart__quantity'> Quantité : </p><p><span class='addItem item" + itm + "'> + </span>" + cartItems[itm].quantity + "<span class='removeItem item" + itm + "'> - </span></p><p class='cart__price'>Prix : " + price + "€</li>"
 
         }
-        html += "<p>Prix Total = " + totalPrice + "€";
+
+        html += "<p class='clearCart' onclick='clearCart()'>\
+        <a href='./panier.html'>Vider le panier</a>\
+        </p><p class='total-price'>Prix Total = " + totalPrice + "€";
     } else {
         html = "<p> Votre panier est vide"
     }

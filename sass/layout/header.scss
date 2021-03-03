@@ -85,3 +85,11 @@
 
     }
 }
+
+@media (max-width: 1024px) {
+    .logo {
+        &__link {
+            width: 25%;
+        }
+    }
+}
