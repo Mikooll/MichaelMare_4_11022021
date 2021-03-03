@@ -363,7 +363,7 @@
 }
 
 .back {
-  margin: 2rem 0;
+  margin: 8rem 0;
 }
 .back a {
   text-decoration: none;
@@ -381,6 +381,11 @@
   .confirmation__container {
     width: 100%;
     margin-top: 50%;
+  }
+}
+@media (min-width: 1900px) {
+  .confirmation__container {
+    margin-top: 10%;
   }
 }
 
