@@ -1,3 +1,6 @@
+/**
+ * Requete GET pour afficher les différents produits dans la barre de navigation
+ */
 fetch("http://localhost:3000/api/cameras")
     .then((response) => response.json())
     .then((datas) => {

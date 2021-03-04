@@ -16,6 +16,8 @@ var city = document.querySelector(".city");
 var email = document.querySelector(".email");
 var totalPrice = document.querySelector('.totalPrice');
 
+// Mise en forme de la page de confirmation 
+// en fonction du contenu des différentes sessions
 idProduct.innerHTML = idToShow;
 firstname.innerHTML = getContact.firstName;
 lastName.innerHTML = getContact.lastName;
@@ -24,4 +26,5 @@ city.innerHTML = getContact.city;
 email.innerHTML = getContact.email;
 totalPrice.innerHTML = getTotalPrice + "€";
 
+// Vidage de la session
 sessionStorage.clear();
