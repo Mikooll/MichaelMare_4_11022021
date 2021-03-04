@@ -309,10 +309,6 @@
   background-color: greenyellow;
 }
 
-.footer {
-  position: absolute;
-}
-
 @media (max-width: 1023px) {
   .items-container {
     display: block;
@@ -346,6 +342,13 @@
     width: 70%;
   }
 }
+.errorCart {
+  display: none;
+  text-align: center;
+  color: red;
+  font-weight: 700;
+}
+
 .confirmation__container {
   text-align: center;
   margin: auto;

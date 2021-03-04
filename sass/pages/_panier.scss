@@ -100,10 +100,6 @@
     }
 }
 
-.footer {
-    position: absolute;
-}
-
 @media (max-width: 1023px) {
     .items-container {
         display: block;
@@ -137,4 +133,11 @@
     .cart {
         width: 70%;
     }
+}
+
+.errorCart {
+    display: none;
+    text-align: center;
+    color: red;
+    font-weight: 700;
 }

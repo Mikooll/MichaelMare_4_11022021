@@ -1,6 +1,7 @@
 var getItems = sessionStorage.getItem("cartItems");
 var items = document.querySelector(".items");
 var formSubmit = document.querySelector('.form__contact');
+var errorCart = document.querySelector('.errorCart');
 var totalPrice = 0;
 
 cartItems = JSON.parse(sessionStorage.getItem('cartItems'));
@@ -10,6 +11,7 @@ var confirmationItems = [];
 setItems();
 
 function setItems() {
+    console.log(getItems);
     var html = "";
      totalPrice = 0;
 
@@ -27,7 +29,7 @@ function setItems() {
         <a href='./panier.html'>Vider le panier</a>\
         </p><p class='total-price'>Prix Total = " + totalPrice + "€";
     } else {
-        html = "<p> Votre panier est vide"
+        html = "<p> Votre panier est vide</p>"
     }
 
     items.innerHTML = html;
@@ -103,7 +105,15 @@ function sendForm() {
         products
     });
 
-    postOrder(contactDatas);
+    if (getItems != null) {
+        postOrder(contactDatas);
+    } else {
+        errorCart.innerHTML = "Votre panier est vide vous ne pouvez pas confirmer votre achat.";
+        errorCart.style.display = "block";
+        setTimeout(() => {
+            errorCart.style.display = "none";
+        }, 2000);
+    }
 }
 
 function addMoreItem(e, items) {

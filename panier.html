@@ -35,17 +35,17 @@
             </ul>
             <div>
                 <h2 class="title__form">Remplissez ce formulaire afin de valider votre commande</h2>
-                <form class="form__contact" action="post" type="submit">
+                <form class="form__contact" action="post" method="POST">
                     <div class="form__content">
                         <label for="firstname">Prénom*</label><br>
                         <input type="text" name="firstname" class="firstname" id="firstname" required />
                     </div>
                     <div class="form__content">
-                        <label for="name">Nom*</label><br>
+                        <label for="lastname">Nom*</label><br>
                         <input type="text" name="name" class="lastname" id="lastname" required />
                     </div>
                     <div class="form__content">
-                        <label for="address">Adresse*</label><br>
+                        <label for="adress">Adresse*</label><br>
                         <input type="text" name="address" class="adress" id="adress" required />
                     </div>
                     <div class="form__content">
@@ -57,9 +57,10 @@
                         <input type="email" name="email" class="email" id="email" required />
                     </div>
                     <button class="validate" id="submit">
-                        <p>Valider la commande</p>
+                        Valider la commande
                     </button>
                 </form>
+                <p class="errorCart"></p>
             </div>
         </div>
     </main>
